@@ -15,6 +15,14 @@ Miután meggyőződtem róla, hogy a funkciók megfelelően működik, regisztr�
 
 Létrehoztam a first, guard, login komponenseket, valamint a login és aruk serviceket. A loginnál és az aruknál egyaránt összekötöttem a megfelelő műveleteket a korábban megvalósítottakkal. A loginhoz még szükséges volt egy felület is az adatok beviteléhez. Ezután az volt a cél, hogy detektáljam, hogy sikeres volt-e a bejelentkezés, ha igen, akkor a következő oldal a `first` volt, amely az az oldal, ahol a felhasználó láthatja az árukat. Ehhez a korábban megvalósított lekérésekre volt szükségem, mely az `aruk.service.ts`-ben van implementálva. Ennél a részfeladatnál a lekérés eredményének típusával akadtak problémáim, így nem tudtam megfelelően letárolni. Viszont, ha nem tároltam le, csak meghívtam a függvényt, akkor az végtelen ciklust eredményezett. Ezért elkészítettem egy interface-t `Coffee` néven az elvárt struktúrával. Ebből aztán elkészítettem egy típust, így a listázó metódus alapértelmezetten ebbe kasztolta a válaszként kapott JSON-t. Így már sikeres volt a listázás. A kávékat szerettem volna esztétikusabb módon megjeleníteni, melyhez `MatCard`-ot használtam. Elhelyeztem egy `BUY` gombot is, amelyet megnyomva meghívódik a PUT metódus, és a vásárlással eggyel kevesebb lesz az adott kávéból. Az Angularos részt a Firebase segítségével hosztoltam, amely a korábban megvalósított Heroku szervert használja. Ezen kívül a listázáshoz szükséges volt megoldani a CORS problémát, melyet az órán tanult `whiteList`-es megoldással kiviteleztem. A `whiteList` két elemet tartalmaz: a `localhost:4200`-t a lokális futtatáshoz, valamint a Firebase által hosztolt URL-t. Így megfelelően működik a kommunikáció a backend és frontend között, a műveletek sikeresen megvalósulnak. 
 
+## Képernyőképek
+
+![image-20220509234116989](E:\Egyetem\prf\coffeeshop\image1.png)
+
+![image-20220509234205877](E:\Egyetem\prf\coffeeshop\image2.png)
+
+![image-20220509234305888](E:\Egyetem\prf\coffeeshop\image3.png)
+
 ## Elérhetőség
 
 Szvoreny Viktor - [szvoreny.viktor@inf.u-szeged.hu](szvoreny.viktor@inf.u-szeged.hu)
