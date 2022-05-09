@@ -17,11 +17,11 @@ Létrehoztam a first, guard, login komponenseket, valamint a login és aruk serv
 
 ## Képernyőképek
 
-![image-20220509234116989](E:\Egyetem\prf\coffeeshop\image1.png)
+![image1](image1.png)
 
-![image-20220509234205877](E:\Egyetem\prf\coffeeshop\image2.png)
+![image2](image2.png)
 
-![image-20220509234305888](E:\Egyetem\prf\coffeeshop\image3.png)
+![image3](image3.png)
 
 ## Elérhetőség
 
